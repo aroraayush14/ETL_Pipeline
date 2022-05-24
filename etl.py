@@ -10,3 +10,7 @@ driver = "{SQL Server Native Client 11.0}"
 server = 'localhost'
 database = 'AdventureWorksDW2019'
 
+def extract():
+    try:
+        src_conn = pyodbc.connect('DRIVER=' + driver + ';SERVER=' + server + '\SQLEXPRESS'   +  ';DATABASE=' + database + ';PGUID=' + uid + ';PWD=' + pwd)
+        
