@@ -1,8 +1,9 @@
+#importing packages
 from sqlalhemy import create_engine
 import pyodbc
 import pandas as pd 
 import os
-
+#
 pwd = os.environ['PGPASS']
 uid = os.environ['PGUID']
 
